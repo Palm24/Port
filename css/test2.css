@@ -1,0 +1,60 @@
+.main-nav{
+  margin-top: 10px;
+  background-color: rgb(59, 59, 59);
+}
+
+/* Set the border color */        
+.custom-toggler.navbar-toggler { 
+  border-color: rgb(0, 0, 0); 
+} 
+/* Setting the stroke to green using rgb values (0, 128, 0) */     
+.custom-toggler .navbar-toggler-icon { 
+  background-image: url( 
+"data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); 
+} 
+
+.navbar-nav {
+  text-align: center;
+}
+
+.nav-item{
+  padding: 10px;
+}
+
+.navbar-nav a{
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+.nav a:hover{
+  color: rgb(32, 160, 0);;
+}
+
+.nav a.active{
+  color: rgb(32, 160, 0);;
+}
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}

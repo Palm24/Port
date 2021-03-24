@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+  }
+  body{
+    font-family: 'Prompt', sans-serif;
+    color:black;
+  }
+
+  /* --------fix menu-------- */
+  .fix{
+    position: fixed;
+    z-index: 5;
+    background-color:#ffffff;
+    width: 100%;
+  }
+
+  /* --------Head-------- */
+  .head{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align:center;
+    }
+
+  .menus-head {
+    overflow: hidden;
+    background-color: rgb(59, 59, 59);
+    width: 100%;
+  }
+
+  /* --------MENU-------- */
+  .menus-head a {
+    float: left;
+    display: inline;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    /* ค่าแรกคือ ความกว้างแนวตั้ง ค่ำที่ 2 คือความกว้างแนวนอน */
+    padding: 10px 2%; 
+    text-decoration: none;
+    font-size: 14px;
+    font-family: 'Prompt', sans-serif;
+  }
+  .menus-head a:hover {
+    background-color: rgb(59, 59, 59);
+    color: rgb(32, 160, 0);
+  }
+  .menus-head a.active {
+    color: rgb(32, 160, 0);
+  }
+  .menus-head .icon {
+    display: none;
+  }
+  @media screen and (max-width: 1200px) {
+    .menus-head a:not(:first-child) {display: none;}
+    .menus-head a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    .menus-head.responsive {position: relative;}
+    .menus-head.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .menus-head.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+  /* --------Picture-------- */
+  .example{
+    border: 2px solid;
+    background-color: rgb(255, 255, 170);
+    color: black;
+    position: relative;
+  }
+  /* .example .insert-image{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: JasmineUPC;
+  text-align:center;
+  } */
+
+  /* --------Main-------- */
+  .page{
+    overflow: hidden;
+  }
+
+  /* --------Left-------- */
+  .menu-left {
+    float:left;
+    width:10%;
+    padding: 15px;
+    margin-top:5px;
+    text-align:center;
+  }
+
+  /* --------Center-------- */
+  .main {
+    float:left;
+    width:80%;
+    /* height: 1500px; */
+    padding:0 50px;
+    margin-top:100px;
+    margin-bottom:50px;
+  }
+  .main .text{
+    color: black;
+    font-family: 'Prompt', sans-serif;
+  }
+  .main .text p{
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    margin-top:20px;
+    margin-bottom: 70px;
+    font-family: 'Prompt', sans-serif;
+  }
+
+  div .col-md-7 {
+    position: relative;
+  }
+    /* CSS Google Maps! กำหนดความกว้าง ความสูงของแผนที่ */
+    #map_canvas { 
+      position: static ;
+      width:100%;
+      height:750px;
+      margin:auto;
+      border: 1px solid black;    
+      border-radius: 15px;
+      margin-bottom: 50px;
+    }
+  div .col-md-6 {
+    position: static;
+  }
+  div .col-md-5 {
+    position: static;
+  }
+  div .col-sm-6 {
+    margin-top: 10px;
+    position: static;
+  }
+  div .col-sm-12 {
+    position: static;
+  }
+
+  /* --------Right-------- */
+  .right {
+    /* background-color:#e5e5e5; */
+    float:left;
+    width:10%;
+    padding:15px;
+    margin-top:5px;
+    text-align:center;
+  }
+
+  /* CSS Search Block */
+.search1{
+  background-color: rgb(59, 59, 59);
+  color: rgb(29, 143, 0);
+  border: 1px solid;
+  padding: 20px;
+  font-family: 'Prompt', sans-serif;
+}
+.search2{
+  background-color: #00802b;
+  color: rgb(255, 255, 255);
+  border: 1px solid;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: 'Prompt', sans-serif;
+}
+.contact{
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: rgb(245, 245, 245);
+  color: black;
+  font-family: 'Prompt', sans-serif;
+}
+.contact a{
+  font-size: 24px;
+}
+.contact .btn-success {
+  font-family: JasmineUPC;
+  background-color: rgb(32, 160, 0);
+  color: rgba(255, 255, 255);
+  letter-spacing: 1px;
+  line-height: 15px;
+  padding: 10px;
+  border: 2px solid rgba(103, 192, 103, 0.75);
+  border-radius: 40px;
+  transition: all 0.3s ease 0s;
+}
+  /* กรอบการแสดลงผลข้อมูล */
+  #borders {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 12px;
+    text-align: center;
+  }
+  /* บรรทัดต่อจากนี้เป็น css กำหนดการแสดงในส่วน sidebar หรือแถบข้าง */
+  #side_bar{
+    /* float:center; */
+    text-align: center;
+    width:100%;
+    height:500px;
+    overflow:auto;
+  }
+
+    /* --------Footer-------- */
+  .footer{
+    background-color:#e5e5e5;
+    text-align:center;
+    padding:10px;
+    margin-top:10px;
+  }
+  
+  @media only screen and (max-width:1200px) {
+    /* For mobile phones: */
+    .menu-left, .main, .right {
+      width:100%;
+    }
+  }
+
+
+  
